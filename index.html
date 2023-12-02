@@ -1,0 +1,99 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Page</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+    </style>
+</head>
+<body>
+<div id="app"></div>
+
+<script type="text/babel">
+    function ProfilePage() {
+        return (
+            <div className="bg-gray-50 min-h-screen">
+                <div className="p-4">
+                    <img className="w-24 h-24 rounded-full mx-auto" src="./images/Profile.jpg" alt="Profile picture of a person with short hair, smiling, wearing a dark top." />
+                    <div className="text-center mt-4">
+                        <div className="text-lg font-bold"><a href="https://www.instagram.com/pj.techbiz/">@pj.techbiz</a></div>
+                        <div className="text-gray-600">商業 | 科技 | 創業</div>
+                    </div>
+                    <div className="flex justify-center space-x-4 mt-4 items-center">
+                        <a href="https://explainthis.io">
+                            <img className="h-[50px]" src="./images/ExplainThis-Logo.png" /> 
+                        </a>
+                        <a href="https://page.line.me/?accountId=explainthis">
+                            <img className="h-[50px]" src="./images/Line-Logo.png" /> 
+                        </a>
+                        <a href="https://www.explainthis.io/zh-hant/pinthis">
+                            <img className="h-[50px]" src="./images/PinThis-Logo.png" /> 
+                        </a>
+                        <a href="https://www.instagram.com/explainthis.io/">
+                            <img className="h-[50px]" src="./images/Instagram-Logo.png" />
+                        </a>
+                    </div>
+                    <div className="text-center mt-8">
+                        <span>合作：<a href="mailto:hello@explainthis.io">hello@explainthis.io</a></span>
+                    </div>
+                </div>
+                <div className="p-4">
+                    <div className="mb-5">
+                        <div className="text-center my-2 text-2xl font-bold">專屬優惠</div>
+                        <div className="bg-gray-100 p-2 rounded-lg shadow">
+                            <div className="flex items-center space-x-4">
+                                <img className="w-12 h-12 rounded-md" src="https://ugc.production.linktr.ee/77caf20e-a354-419f-b14e-0ed9c45c39e7_c273d935-f127-4e19-9363-111b2396eb14-apple-touch-icon-152x152-precomposed.png?io=true&size=thumbnail-stack-v1_0" alt="Thumbnail image of a person with short hair, smiling, wearing a white top." />
+                                <div className="flex-1">
+                                    <div className="font-bold text-center">
+                                        <a href="https://www.tesa.center/brands/TeSA">TeSA 課程｜專屬折扣碼 25%off : PJvip2024</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="mb-5">
+                        <div className="text-center my-1 text-2xl font-bold">友站連結</div>
+                        <div className="bg-gray-100 p-2 rounded-lg shadow mb-3">
+                            <div className="flex items-center space-x-4">
+                                <img className="w-12 h-12 rounded-md" src="./images/li_tech.jpeg" alt="Thumbnail image of a person with short hair, smiling, wearing a white top." />
+                                <div className="flex-1">
+                                    <div className="font-bold text-center">
+                                        <a href="https://www.instagram.com/li.techtalk/">Li 聊科技與職涯</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="bg-gray-100 p-2 rounded-lg shadow">
+                            <div className="flex items-center space-x-4">
+                                <img className="w-12 h-12 rounded-md" src="./images/lynn.jpeg" alt="Thumbnail image of a person with short hair, smiling, wearing a white top." />
+                                <div className="flex-1">
+                                    <div className="font-bold text-center">
+                                        <a href="https://www.instagram.com/lynn_summerdays/">Lynn 軟體工程師在新加坡｜職涯 x 新生活</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    
+
+                </div>
+            </div>
+        );
+    }
+
+    ReactDOM.render(<ProfilePage />, document.getElementById('app'));
+</script>
+</body>
+</html>
